@@ -1,0 +1,109 @@
+/* General reset and fonts */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8fa;
+    padding: 2rem;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    padding: 0.6rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+/* Style the first input differently */
+input:first-of-type {
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}
+
+/* Focus styles (Instruction 11) — using list selector in order */
+input:focus,
+textarea:focus {
+    border-color: #0077cc;
+    outline: none;
+}
+
+/* Validation styles */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+/* Radio group styling */
+.radio-group {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+/* Radio input visual when selected */
+.radio-group input[type="radio"]:checked {
+    border: 2px solid #0077cc;
+    background-color: #e6f0ff;
+    box-shadow: 0 0 5px #0077cc;
+}
+
+/* Change label text color when radio selected (Instruction 18) */
+input[type="radio"]:checked+label {
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Button styles */
+button {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover style (Instruction 14) */
+button:hover {
+    background-color: #005fa3;
+}
