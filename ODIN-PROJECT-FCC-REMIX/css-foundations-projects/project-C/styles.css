@@ -1,0 +1,16 @@
+/* Shared styles using a selector list */
+.btn-primary,
+.btn-secondary {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;
+}
+
+/* Unique styles for each button */
+.btn-primary {
+    background-color: black;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: yellow;
+}
